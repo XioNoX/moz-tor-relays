@@ -1,0 +1,27 @@
+---
+- hosts: tor-relays
+  connection: ssh
+  sudo: yes
+  pre_tasks:
+   - name: Create users
+     user: name={{ item.name }} shell=/bin/bash groups=wheel
+     with_items: ssh_users
+     tags: users-config
+   - name: Add ssh user keys
+     authorized_key: user={{ item.name }} key="{{ item.key }}"
+     with_items: ssh_users
+     tags: users-config
+   - name: Create tor user 
+     tags: users-config
+     user: name=tor shell=/bin/nologin createhome=no
+
+  roles:
+    - { role: kernel-tuning,
+        tags: kernel-config,
+      }
+    - { role: bennojoy.network_interface,
+        tags: network-config,
+      }
+    - { role: ansible-tor,
+        tags: tor-config,
+      }

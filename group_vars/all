@@ -1,0 +1,6 @@
+---
+ssh_users:
+  - name: xionox
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAweEnau/EYh0Hdyon4KoT/WRnEUBwdh8Cw+1Mvs1wOxSzBqPg2M9U5JADm20WG+SfyeCyrMXlIDjG5SyBTfALKwez4ExonQ5FyGvt8v4ipQRx+U+tdewIu9n2aAdmZia+0pS1ZgbyhkJtwNO8D95axlmeOab46HyQqZs0BVxPPdXM4ysPUgPZpSIyQ3rfFVerrVClLBNxqHvi7ZuyKH1zBAxSURhT60oRRNGI74G0+78nAA1c/cTeY/DbEKsJNpo7VK5slh9XQNUS2/6X4mgYg5IUK3AtaXIDnA6H5HCgghba0pZN4AmVR4dwVmILWeb8HpMInlLowQUQ5jNXM+hnYQ== xionox@laptop"
+  - name: mpurzynski
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWjtMmpMcHqdOtbQ4/YhL80xXauMO3TOEDKyJQOF0qWAnEyu/96mtaBOozjTLCN02U7m8ZzADMkEznAidu+4NxLsu7ZoF1KhvMVuKXbk5Xig2vmmWdPhN5pJW+CBApn7wav3TCaqmsojZST7DBxxMiaayViQ3Xi/oJ45sSBYyj/e8sG3uatG2zAlqc1N/giZbY91fw61xGH8vjmTbd2jPl2YPs5fdYomHMTbKvLHDMXtrIAnxhLW3IgsU+hJStOsE2hzM56n8rtLsWUPa2X9oc77bax+NrC1yy5oxN7a/i13Sl5I17+/faJiU1pawidh+wWjqlHkUmgVzm1TGbZKTr mpurzynski@mpurzynski-10854.local"

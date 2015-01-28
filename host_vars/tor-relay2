@@ -1,0 +1,59 @@
+---
+network_ether_interfaces:
+       - device: bond0:1
+         bootproto: static
+         address: 209.119.188.41
+         netmask: 255.255.255.224
+       - device: bond0:2
+         bootproto: static
+         address: 209.119.188.42
+         netmask: 255.255.255.224
+
+proc_instances: [{  name: "Mozilla9",
+                    tor_Nickname: ["Mozilla9"],
+                    tor_ORPort: ["209.119.188.38:443"],
+                    tor_DirPort: ["209.119.188.38:80"],
+                    tor_Address: ["209.119.188.38"],
+                    tor_SOCKSPort: ["0"]
+                },
+                {
+                    name: "Mozilla10",
+                    tor_Nickname: ["Mozilla10"],
+                    tor_ORPort: ["209.119.188.38:9090"],
+                    tor_DirPort: ["209.119.188.38:9091"],
+                    tor_Address: ["209.119.188.38"],
+                    tor_SOCKSPort: ["0"]
+                },
+                {
+                    name: "Mozilla12",
+                    tor_Nickname: ["Mozilla12"],
+                    tor_ORPort: ["209.119.188.41:9090"],
+                    tor_DirPort: ["209.119.188.41:9091"],
+                    tor_Address: ["209.119.188.41"],
+                    tor_SOCKSPort: ["0"]
+                },
+                {
+                    name: "Mozilla11",
+                    tor_Nickname: ["Mozilla11"],
+                    tor_ORPort: ["209.119.188.41:443"],
+                    tor_DirPort: ["209.119.188.41:80"],
+                    tor_Address: ["209.119.188.41"],
+                    tor_SOCKSPort: ["0"]
+                },
+                {
+                    name: "Mozilla13",
+                    tor_Nickname: ["Mozilla13"],
+                    tor_ORPort: ["209.119.188.42:9090"],
+                    tor_DirPort: ["209.119.188.42:9091"],
+                    tor_Address: ["209.119.188.42"],
+                    tor_SOCKSPort: ["0"]
+                },
+                {
+                    name: "Mozilla14",
+                    tor_Nickname: ["Mozilla14"],
+                    tor_ORPort: ["209.119.188.42:443"],
+                    tor_DirPort: ["209.119.188.42:80"],
+                    tor_Address: ["209.119.188.42"],
+                    tor_SOCKSPort: ["0"]
+                }]
+
