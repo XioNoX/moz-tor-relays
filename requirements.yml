@@ -1,0 +1,10 @@
+---
+- src: https://github.com/david415/ansible-tor
+  version: master
+  name: ansible-tor
+  path: roles
+
+- src: https://github.com/bennojoy/network_interface
+  version: master
+  name: bennojoy.network_interface
+  path: roles

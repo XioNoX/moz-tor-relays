@@ -14,7 +14,8 @@ Don't forget to edit the vars files.
 https://github.com/david415/ansible-tor/ (with https://github.com/david415/ansible-tor/pull/5)
 and
 https://github.com/bennojoy/network_interface
-Need to be in your roles directory.
+
+These can be installed by running `ansible-galaxy install -r requirements.yml`
 
 ## Contact
 Don't hesitate to contact me at arzhel@mozilla.com for any questions.
